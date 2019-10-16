@@ -8,13 +8,6 @@
 
 <!-- シーンの追加とデバックUIを非表示 -->
 <a-scene embedded arjs="debugUIEnabled:false;">
-  <!-- ② hiroマーカーでのソース -->
-  <a-marker preset="hiro">
-    <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#111">
-      <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
-      </a-animation>
-    </a-sphere>
-  </a-marker>
 
   <a-assets>
     <a-asset-item id="cottage_obj" src="./model/cottage/cottage.obj"></a-asset-item>
@@ -33,7 +26,7 @@
       </a-animation>
     </a-sphere>
   </a-marker>
-  <a-marker type='pattern' url='./marker/pattern-AR-fire9.patt'>
+  <a-marker type='pattern' url='./marker/pattern-AR-fire.patt'>
     <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#0f0">
       <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
       </a-animation>
