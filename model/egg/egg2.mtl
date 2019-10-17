@@ -1,0 +1,14 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl _10858_egg_v2_L3_eggegg_egg_jpg
+Ns 47.058824
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.439200 0.439200 0.384300
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd egg.jpg
+map_Ka egg.jpg

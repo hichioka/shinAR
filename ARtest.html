@@ -12,6 +12,14 @@
   <a-assets>
     <a-asset-item id="cottage_obj" src="./model/cottage/cottage.obj"></a-asset-item>
     <a-asset-item id="cottage_mtl" src="./model/cottage/cottage.mtl"></a-asset-item>
+    <a-asset-item id="tuna_obj" src="./model/Tuna/TUNA.OBJ"></a-asset-item>
+    <a-asset-item id="tuna_mtl" src="./model/Tuna/TUNA.MTL"></a-asset-item>
+    <a-asset-item id="egg_obj" src="./model/egg/egg2.obj"></a-asset-item>
+    <a-asset-item id="egg_mtl" src="./model/egg/egg2.mtl"></a-asset-item>
+    <a-asset-item id="frypan_obj" src="./model/frypan/frypan2.obj"></a-asset-item>
+    <a-asset-item id="frypan_mtl" src="./model/frypan/frypan2.mtl"></a-asset-item>
+    <a-asset-item id="eggbacon_obj" src="./model/eggbacon/eggbacon.obj"></a-asset-item>
+    <a-asset-item id="eggbacon_mtl" src="./model/eggbacon/eggbacon.mtl"></a-asset-item>
 
   </a-assets>
 
@@ -27,13 +35,26 @@
     </a-sphere>
   </a-marker>
   <a-marker type='pattern' url='./marker/pattern-AR-fire.patt'>
-    <a-sphere scale=".25 .25 .25" position="0 .5 0" color="#0f0">
+    <a-box scale=".25 .25 .25" position="0 .5 0" color="#0f0">
       <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
       </a-animation>
-    </a-sphere>
+    </a-box>
+  </a-marker>
+  <a-marker type='pattern' url='./marker/pattern-tuna.patt'>
+    <a-obj-model src="#tuna_obj" mtl="#tuna_mtl" position="0 0 0" scale="5 5 5" rotation="0 270 90"></a-obj-model>
+  </a-marker>
+  <a-marker type='pattern' url='./marker/pattern-frypan.patt'>
+    <a-obj-model src="#frypan_obj" mtl="#frypan_mtl" position="0 0 0" scale="2 2 2" rotation="0 90 -90"></a-obj-model>
+  </a-marker>
+  <a-marker type='pattern' url='./marker/pattern-egg.patt'>
+    <a-obj-model src="#egg_obj" mtl="#egg_mtl" position="0 0 0" scale="1 1 1" rotation="0 0 0"></a-obj-model>
+  </a-marker>
+  <a-marker type='pattern' url='./marker/pattern-medamayaki.patt'>
+    <a-obj-model src="#eggbacon_obj" mtl="#eggbacon_mtl" position="0 0 0" scale="3 3 3" rotation="0 0 0"></a-obj-model>
   </a-marker>
 
   <a-entity camera></a-entity>
+
 </a-scene>
 </body>
 </html>
